@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Wavelength</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="grain"></div>
+    <div id="progress"></div>
+    <div class="cursor-dot" id="cdot"></div>
+    <div class="cursor-ring" id="cring"></div>
+
+    <div id="preloader">
+        <div class="pre-word" id="preWord"></div>
+        <div class="pre-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <header id="siteHeader">
+        <a href="index.html" class="logo"><span class="dot"></span> WAVELENGTH</a>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="index.html" data-hover>Home</a></li>
+                <li><a href="field-notes.html" data-hover>Field Notes</a></li>
+                <li><a href="archive.html" data-hover>Archive</a></li>
+                <li><a href="about.html" data-hover>About</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="nav-cta" data-hover-big>Get the digest ↗</a>
+    </header>
+
+    <div class="page-hero">
+        <h1>Get in <span class="accent">Touch</span></h1>
+        <p class="sub">Have a story idea, a studio tip, or just want to say hello? We read every message.</p>
+    </div>
+
+    <section>
+        <div class="contact-wrap reveal">
+            <div class="contact-info">
+                <h3>Let's make something.</h3>
+                <p>Whether you're a musician with a story to tell, an engineer with a weird recording technique, or a reader who just wants to chat — we'd love to hear from you.</p>
+
+                <div class="contact-method">
+                    <div class="icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </div>
+                    <div>
+                        <div class="label">Email</div>
+                        <div class="value">hello@wavelength.fm</div>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div>
+                        <div class="label">Instagram</div>
+                        <div class="value">@wavelength</div>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                    </div>
+                    <div>
+                        <div class="label">Web</div>
+                        <div class="value">wavelength.fm</div>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="label">Studio</div>
+                        <div class="value">Brooklyn, NY</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <form class="contact-form" id="contactForm">
+                    <label for="contactName">Your name</label>
+                    <input type="text" id="contactName" placeholder="e.g. Jamie" required>
+
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" placeholder="you@somewhere.com" required>
+
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" placeholder="What's this about?" required>
+
+                    <label for="contactMsg">Message</label>
+                    <textarea id="contactMsg" placeholder="Tell us something..." required></textarea>
+
+                    <button type="submit" class="btn btn-primary magnetic" data-hover-big>
+                        <span class="fill"></span>
+                        <span class="txt">Send message ↗</span>
+                    </button>
+                </form>
+                <p class="letter-note hidden" id="contactNote" style="margin-top:16px;">Thanks for reaching out. We'll be in touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">FAQ</span>
+                <h2>Quick answers.</h2>
+            </div>
+            <p>Before you write in, check if your question is answered here.</p>
+        </div>
+        <div class="faq-list reveal" style="max-width:700px;margin:0 auto;">
+            <div class="faq-item">
+                <button class="faq-question">How quickly do you reply? <span class="icon">+</span></button>
+                <div class="faq-answer"><p>Usually within 48 hours. If you're pitching a story, we'll read it within a week and let you know either way.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I suggest a studio or artist to feature? <span class="icon">+</span></button>
+                <div class="faq-answer"><p>Absolutely. We're always looking for studios, home rigs, and unusual recording spaces to visit. Drop us the details and we'll follow up.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you accept freelance pitches? <span class="icon">+</span></button>
+                <div class="faq-answer"><p>Yes. We pay for reported features and field essays. Send a short pitch (3-5 sentences) and a sample of your writing.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I republish a Wavelength piece? <span class="icon">+</span></button>
+                <div class="faq-answer"><p>We're open to republication under a Creative Commons license for non-commercial use. Just reach out and we'll set it up.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="letter reveal">
+            <span class="section-tag" style="justify-content:center;">Response time</span>
+            <h2>We read every message.</h2>
+            <p>Whether it's a pitch, a question, or just a note about a piece you loved — we reply to every single one. Usually within 48 hours.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+                <div style="border:1px solid var(--line);border-radius:16px;padding:20px 28px;text-align:center;">
+                    <div style="font-family:'Bricolage Grotesque';font-size:32px;font-weight:800;color:var(--pulse);">&lt; 48h</div>
+                    <div style="font-family:'JetBrains Mono';font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--bone-dim);margin-top:4px;">Avg. reply time</div>
+                </div>
+                <div style="border:1px solid var(--line);border-radius:16px;padding:20px 28px;text-align:center;">
+                    <div style="font-family:'Bricolage Grotesque';font-size:32px;font-weight:800;color:var(--amber);">100%</div>
+                    <div style="font-family:'JetBrains Mono';font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--bone-dim);margin-top:4px;">Messages replied</div>
+                </div>
+                <div style="border:1px solid var(--line);border-radius:16px;padding:20px 28px;text-align:center;">
+                    <div style="font-family:'Bricolage Grotesque';font-size:32px;font-weight:800;color:var(--violet);">0</div>
+                    <div style="font-family:'JetBrains Mono';font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--bone-dim);margin-top:4px;">Spam sent</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="letter">
+        <div class="letter reveal">
+            <span class="section-tag" style="justify-content:center;">Twice a month · No noise</span>
+            <h2>Subscribe before you go.</h2>
+            <p>One thoughtful email, every other Sunday. No spam, no fuss.</p>
+            <form class="letter-form" id="subForm">
+                <input type="email" placeholder="you@somewhere.com" required id="subEmail">
+                <button type="submit" class="btn btn-primary magnetic" data-hover-big><span class="fill"></span><span class="txt">Subscribe ↗</span></button>
+            </form>
+            <p class="letter-note hidden" id="subNote">You're on the list. First issue lands Sunday.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-top">
+            <div class="foot-brand">
+                <a href="index.html" class="logo" style="margin-bottom:18px;"><span class="dot"></span> WAVELENGTH</a>
+                <h3>Turn it up<br>and read slowly.</h3>
+            </div>
+            <div class="foot-cols">
+                <div class="foot-col">
+                    <h4>Read</h4>
+                    <a href="field-notes.html" data-hover>Field Notes</a>
+                    <a href="archive.html" data-hover>Archive</a>
+                    <a href="about.html" data-hover>About</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Follow</h4>
+                    <a href="#" data-hover>Instagram</a>
+                    <a href="#" data-hover>Threads</a>
+                    <a href="#" data-hover>RSS</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Say hi</h4>
+                    <a href="contact.html" data-hover>Contact</a>
+                    <a href="contact.html" data-hover>Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>© 2026 Wavelength. Made slowly, on purpose.</span>
+            <a href="index.html" class="back-top" id="backTop" aria-label="Back to top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        (function () {
+            const form = document.getElementById('contactForm');
+            const note = document.getElementById('contactNote');
+            if (form && note) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    note.classList.remove('hidden');
+                    form.reset();
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>

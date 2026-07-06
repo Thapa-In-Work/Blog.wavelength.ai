@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavelength — Notes on Music, Made Slowly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="grain"></div>
+    <div id="progress"></div>
+    <div class="cursor-dot" id="cdot"></div>
+    <div class="cursor-ring" id="cring"></div>
+
+    <div id="preloader">
+        <div class="pre-word" id="preWord"></div>
+        <div class="pre-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <header id="siteHeader">
+        <a href="index.html" class="logo"><span class="dot"></span> WAVELENGTH</a>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="index.html" class="active" data-hover>Home</a></li>
+                <li><a href="field-notes.html" data-hover>Field Notes</a></li>
+                <li><a href="archive.html" data-hover>Archive</a></li>
+                <li><a href="about.html" data-hover>About</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="nav-cta" data-hover-big>Get the digest ↗</a>
+    </header>
+
+    <section class="hero">
+        <div class="eyebrow">Issue 014 · Slow listening</div>
+        <h1>
+            <span class="line"><span style="animation-delay:.15s">Notes on music,</span></span>
+            <span class="line"><span style="animation-delay:.28s">written at the</span></span>
+            <span class="line"><span class="accent" style="animation-delay:.41s">speed of sound.</span></span>
+        </h1>
+        <p class="sub">Wavelength is a small, stubborn blog about how songs get made, why fade-outs disappeared, and
+            what a producer actually hears in a room full of noise.</p>
+        <div class="hero-actions">
+            <a href="field-notes.html" class="btn btn-primary" data-hover-big><span class="fill"></span><span class="txt">Start
+                    reading ↓</span></a>
+            <a href="contact.html" class="btn btn-ghost" data-hover>Join 4,300 readers</a>
+        </div>
+        <div class="hero-waveform" id="heroWave"></div>
+    </section>
+
+    <div class="marquee-wrap">
+        <div class="marquee" id="marquee">
+            <span>Production</span><span>Bedroom Pop</span><span>Liner Notes</span><span>Field
+                Recording</span><span>Mixing</span><span>Vinyl
+                Culture</span><span>Sampling</span><span>Interludes</span>
+            <span>Production</span><span>Bedroom Pop</span><span>Liner Notes</span><span>Field
+                Recording</span><span>Mixing</span><span>Vinyl
+                Culture</span><span>Sampling</span><span>Interludes</span>
+        </div>
+    </div>
+
+    <section id="work">
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">This week's pick</span>
+                <h2>The story we can't stop thinking about.</h2>
+            </div>
+            <p>Long-form pieces on the small decisions that make a track feel alive.</p>
+        </div>
+
+        <div class="featured reveal">
+            <div>
+                <span class="featured-tag">Production · 11 min read</span>
+                <h3>The Anatomy of a Fade-In</h3>
+                <p>Most songs are built to arrive loud. We spent three weeks with engineers who do the opposite —
+                    tracing the quiet art of the slow entrance, and why it still works on a phone speaker at 6am.</p>
+                <div class="meta-row">
+                    <span>— R. Okafor</span>
+                    <span>04 Jul 2026</span>
+                    <span>Field Notes</span>
+                </div>
+                <a href="field-notes.html" class="read-link" data-hover>Read the piece
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H8M17 7V16" />
+                    </svg>
+                </a>
+            </div>
+            <div class="vinyl">
+                <div class="vinyl-label">SIDE&nbsp;A</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">The crate</span>
+                <h2>Recent field notes.</h2>
+            </div>
+            <p>Short dispatches from studios, record shops, and other people's headphones.</p>
+        </div>
+
+        <div class="crate reveal-stagger">
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">01</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Culture</span>
+                <h3>Bedroom Producers Are Quietly Rewriting Pop</h3>
+                <p>How a generation raised on cracked plugins learned to make records that outsell studio budgets ten
+                    times their size.</p>
+                <div class="card-foot"><span>6 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">02</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Field Recording</span>
+                <h3>Field Notes from a Vinyl Shop at Closing Time</h3>
+                <p>An hour spent listening to what regulars ask for last — and what that says about how a city actually
+                    feels.</p>
+                <div class="card-foot"><span>8 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">03</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Songwriting</span>
+                <h3>Why Interludes Matter More Than Singles</h3>
+                <p>The unglamorous 90-second tracks that hold an album together, and the arguments producers have over
+                    cutting them.</p>
+                <div class="card-foot"><span>5 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">04</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Interview</span>
+                <h3>Liner Notes: An Interview Format Revisited</h3>
+                <p>We asked five touring musicians to write their own liner notes instead of answering questions. Here's
+                    what came back.</p>
+                <div class="card-foot"><span>10 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">05</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Craft</span>
+                <h3>The Second Verse Problem</h3>
+                <p>Why the second verse is where most songs quietly fall apart, and three ways writers rescue it.</p>
+                <div class="card-foot"><span>7 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+
+            <article class="card" data-hover>
+                <div class="card-top"><span class="card-num">06</span>
+                    <div class="mini-bars"><i></i><i></i><i></i></div>
+                </div>
+                <span class="card-cat">Mixing</span>
+                <h3>Silence Is a Frequency Too</h3>
+                <p>A mix engineer's case for leaving space in the arrangement — and what gets sacrificed when every bar
+                    is full.</p>
+                <div class="card-foot"><span>9 min</span>
+                    <div class="card-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" />
+                        </svg></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="numbers" style="padding-left:0; padding-right:0;">
+        <div class="stats reveal">
+            <div class="stat">
+                <div class="num" data-count="4300">0</div>
+                <div class="lbl">Weekly readers</div>
+            </div>
+            <div class="stat">
+                <div class="num" data-count="128">0</div>
+                <div class="lbl">Essays published</div>
+            </div>
+            <div class="stat">
+                <div class="num" data-count="37">0</div>
+                <div class="lbl">Studios visited</div>
+            </div>
+            <div class="stat">
+                <div class="num" data-count="14">0</div>
+                <div class="lbl">Cities covered</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">This month</span>
+                <h2>Most read.</h2>
+            </div>
+            <p>The stories our readers keep coming back to.</p>
+        </div>
+        <div class="popular-strip reveal">
+            <div class="mini-card" data-hover>
+                <div class="rank">01</div>
+                <h4>The Anatomy of a Fade-In</h4>
+                <div class="meta">Production · 11 min</div>
+            </div>
+            <div class="mini-card" data-hover>
+                <div class="rank">02</div>
+                <h4>Bedroom Producers Are Quietly Rewriting Pop</h4>
+                <div class="meta">Culture · 6 min</div>
+            </div>
+            <div class="mini-card" data-hover>
+                <div class="rank">03</div>
+                <h4>Silence Is a Frequency Too</h4>
+                <div class="meta">Mixing · 9 min</div>
+            </div>
+            <div class="mini-card" data-hover>
+                <div class="rank">04</div>
+                <h4>Why Interludes Matter More Than Singles</h4>
+                <div class="meta">Songwriting · 5 min</div>
+            </div>
+            <div class="mini-card" data-hover>
+                <div class="rank">05</div>
+                <h4>The Second Verse Problem</h4>
+                <div class="meta">Craft · 7 min</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">Listen along</span>
+                <h2>Curated playlists.</h2>
+            </div>
+            <p>Every essay comes with a companion listening list. Here are this month's selections.</p>
+        </div>
+        <div class="playlist-grid reveal-stagger">
+            <div class="playlist-card" data-hover>
+                <div class="icon-wrap" style="background:rgba(255,77,109,0.12);color:var(--pulse);">✦</div>
+                <h4>Slow Builds</h4>
+                <p>Songs that take their time arriving — just like a good fade-in.</p>
+                <span class="track-count">12 tracks · 47 min</span>
+            </div>
+            <div class="playlist-card" data-hover>
+                <div class="icon-wrap" style="background:rgba(255,193,69,0.12);color:var(--amber);">◈</div>
+                <h4>Bedroom Gold</h4>
+                <p>Hits recorded in bedrooms that changed the sound of pop.</p>
+                <span class="track-count">9 tracks · 34 min</span>
+            </div>
+            <div class="playlist-card" data-hover>
+                <div class="icon-wrap" style="background:rgba(124,108,240,0.12);color:var(--violet);">◇</div>
+                <h4>Interlude State</h4>
+                <p>The 90-second tracks that steal the whole album.</p>
+                <span class="track-count">14 tracks · 22 min</span>
+            </div>
+            <div class="playlist-card" data-hover>
+                <div class="icon-wrap" style="background:rgba(255,77,109,0.12);color:var(--pulse);">♢</div>
+                <h4>Silent Frequencies</h4>
+                <p>Masterclasses in restraint — songs built on negative space.</p>
+                <span class="track-count">11 tracks · 52 min</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">From the vault</span>
+                <h2>An old favorite.</h2>
+            </div>
+            <p>Sometimes the best piece is the one you missed the first time.</p>
+        </div>
+        <div class="archive-pick reveal">
+            <div class="year-badge">'24</div>
+            <div>
+                <span class="pick-tag">Classic · 14 min read</span>
+                <h3>Why Fade-Outs Disappeared</h3>
+                <p>A deep dive into the death of the fade-out — and the production reasons behind the abrupt endings that replaced them. Featuring insights from three Grammy-winning mix engineers.</p>
+                <div class="meta-row">
+                    <span>— M. Chen</span>
+                    <span>20 Oct 2024</span>
+                    <span>Production</span>
+                </div>
+                <a href="field-notes.html" class="read-link" data-hover>Read from the archive
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+                </a>
+            </div>
+            <div>
+                <p style="color:var(--bone-dim);line-height:1.7;font-size:14px;">"The fade-out was a lie, and we loved it. It told us the song kept playing somewhere after the record ended — that the band was still in the room, still playing, even if we couldn't hear them anymore."</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">Voices</span>
+                <h2>What readers say.</h2>
+            </div>
+            <p>From producers, engineers, and people who just love music.</p>
+        </div>
+        <div class="quote-strip reveal">
+            <div class="quote-card">
+                <blockquote>"Wavelength is the only newsletter I read without skipping. Every piece teaches me something about my own process."</blockquote>
+                <div class="attribution">— <span>Alex P.</span> · Producer, London</div>
+            </div>
+            <div class="quote-card">
+                <blockquote>"Finally, music writing that treats production as the art form it is. The fade-in piece changed how I start tracks."</blockquote>
+                <div class="attribution">— <span>Jamie K.</span> · Bedroom musician, Tokyo</div>
+            </div>
+            <div class="quote-card">
+                <blockquote>"I look forward to every other Sunday like a kid waiting for a new record to drop. This is the real thing."</blockquote>
+                <div class="attribution">— <span>Samira O.</span> · Engineer, Berlin</div>
+            </div>
+            <div class="quote-card">
+                <blockquote>"The mix advice in Silence Is a Frequency Too literally saved a session I was about to scrap."</blockquote>
+                <div class="attribution">— <span>D. Reyes</span> · Producer, Los Angeles</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-divider"><canvas id="waveCanvas"></canvas></div>
+
+    <section id="letter">
+        <div class="letter reveal">
+            <span class="section-tag" style="justify-content:center;">Twice a month · No noise</span>
+            <h2>Get the next issue before anyone else does.</h2>
+            <p>One thoughtful email, every other Sunday. Essays, studio visits, and the songs we can't stop replaying.
+            </p>
+            <form class="letter-form" id="subForm">
+                <input type="email" placeholder="you@somewhere.com" required id="subEmail">
+                <button type="submit" class="btn btn-primary magnetic" data-hover-big><span class="fill"></span><span
+                        class="txt">Subscribe ↗</span></button>
+            </form>
+            <p class="letter-note hidden" id="subNote">You're on the list. First issue lands Sunday.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-top">
+            <div class="foot-brand">
+                <a href="index.html" class="logo" style="margin-bottom:18px;"><span class="dot"></span> WAVELENGTH</a>
+                <h3>Turn it up<br>and read slowly.</h3>
+            </div>
+            <div class="foot-cols">
+                <div class="foot-col">
+                    <h4>Read</h4>
+                    <a href="field-notes.html" data-hover>Field Notes</a>
+                    <a href="archive.html" data-hover>Archive</a>
+                    <a href="about.html" data-hover>About</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Follow</h4>
+                    <a href="#" data-hover>Instagram</a>
+                    <a href="#" data-hover>Threads</a>
+                    <a href="#" data-hover>RSS</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Say hi</h4>
+                    <a href="contact.html" data-hover>Contact</a>
+                    <a href="contact.html" data-hover>Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>© 2026 Wavelength. Made slowly, on purpose.</span>
+            <a href="index.html" class="back-top" id="backTop" aria-label="Back to top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

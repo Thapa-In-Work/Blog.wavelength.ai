@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive — Wavelength</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="grain"></div>
+    <div id="progress"></div>
+    <div class="cursor-dot" id="cdot"></div>
+    <div class="cursor-ring" id="cring"></div>
+
+    <div id="preloader">
+        <div class="pre-word" id="preWord"></div>
+        <div class="pre-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+
+    <header id="siteHeader">
+        <a href="index.html" class="logo"><span class="dot"></span> WAVELENGTH</a>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="index.html" data-hover>Home</a></li>
+                <li><a href="field-notes.html" data-hover>Field Notes</a></li>
+                <li><a href="archive.html" class="active" data-hover>Archive</a></li>
+                <li><a href="about.html" data-hover>About</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="nav-cta" data-hover-big>Get the digest ↗</a>
+    </header>
+
+    <div class="page-hero">
+        <h1>Full <span class="accent">Archive</span></h1>
+        <p class="sub">Every essay, dispatch, and field note we've published — in order. 128 pieces and counting.</p>
+    </div>
+
+    <section>
+        <div class="archive-stats reveal">
+            <div class="archive-stat">
+                <div class="num">128</div>
+                <div class="lbl">Essays</div>
+            </div>
+            <div class="archive-stat">
+                <div class="num">10</div>
+                <div class="lbl">Categories</div>
+            </div>
+            <div class="archive-stat">
+                <div class="num">3</div>
+                <div class="lbl">Years</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">Browse</span>
+                <h2>By category.</h2>
+            </div>
+            <p>Find the stories that match what you're into right now.</p>
+        </div>
+        <div class="tag-cloud reveal">
+            <a href="#" class="lg">Production</a>
+            <a href="#" class="lg">Mixing</a>
+            <a href="#" class="md">Culture</a>
+            <a href="#" class="md">Songwriting</a>
+            <a href="#" class="md">Field Recording</a>
+            <a href="#" class="sm">Interview</a>
+            <a href="#" class="sm">Craft</a>
+            <a href="#" class="sm">Sampling</a>
+            <a href="#" class="sm">Vinyl Culture</a>
+            <a href="#" class="sm">Studio Visit</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-head reveal">
+            <div>
+                <span class="section-tag">Full archive</span>
+                <h2>Every piece, in order.</h2>
+            </div>
+            <p>128 essays and counting. Search by keyword or scroll through the years.</p>
+        </div>
+
+        <div class="search-wrap reveal">
+            <span class="search-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </span>
+            <input type="text" id="searchField" placeholder="Search archive...">
+        </div>
+
+        <div class="archive-list reveal">
+
+            <div class="archive-year">
+                <h3>2026</h3>
+                <div class="archive-entry" data-hover>
+                    <span class="date">04 Jul</span>
+                    <a href="field-notes.html" class="title">The Anatomy of a Fade-In</a>
+                    <span class="cat">Production</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">27 Jun</span>
+                    <a href="field-notes.html" class="title">The Art of the Dig: Finding Gold in Dollar Bins</a>
+                    <span class="cat">Sampling</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">13 Jun</span>
+                    <a href="field-notes.html" class="title">Why We Still Trust the Needle Drop</a>
+                    <span class="cat">Vinyl Culture</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">30 May</span>
+                    <a href="field-notes.html" class="title">Silence Is a Frequency Too</a>
+                    <span class="cat">Mixing</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">16 May</span>
+                    <a href="field-notes.html" class="title">The Second Verse Problem</a>
+                    <span class="cat">Craft</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">02 May</span>
+                    <a href="field-notes.html" class="title">Liner Notes: An Interview Format Revisited</a>
+                    <span class="cat">Interview</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">18 Apr</span>
+                    <a href="field-notes.html" class="title">Why Interludes Matter More Than Singles</a>
+                    <span class="cat">Songwriting</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">04 Apr</span>
+                    <a href="field-notes.html" class="title">Field Notes from a Vinyl Shop at Closing Time</a>
+                    <span class="cat">Field Recording</span>
+                </div>
+            </div>
+
+            <div class="archive-year">
+                <h3>2025</h3>
+                <div class="archive-entry" data-hover>
+                    <span class="date">21 Dec</span>
+                    <a href="field-notes.html" class="title">Bedroom Producers Are Quietly Rewriting Pop</a>
+                    <span class="cat">Culture</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">07 Dec</span>
+                    <a href="field-notes.html" class="title">The Year in Field Recordings: 2025</a>
+                    <span class="cat">Field Recording</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">23 Nov</span>
+                    <a href="field-notes.html" class="title">Why the 808 Still Refuses to Retire</a>
+                    <span class="cat">Production</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">09 Nov</span>
+                    <a href="field-notes.html" class="title">Recording in Reykjavik: A Studio Diary</a>
+                    <span class="cat">Studio Visit</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">26 Oct</span>
+                    <a href="field-notes.html" class="title">The Compression of Dynamic Range: A History</a>
+                    <span class="cat">Mixing</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">12 Oct</span>
+                    <a href="field-notes.html" class="title">How the Cassette Tape Found a Second Life</a>
+                    <span class="cat">Vinyl Culture</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">28 Sep</span>
+                    <a href="field-notes.html" class="title">Songwriting on the Subway: Field Notes</a>
+                    <span class="cat">Songwriting</span>
+                </div>
+            </div>
+
+            <div class="archive-year">
+                <h3>2024</h3>
+                <div class="archive-entry" data-hover>
+                    <span class="date">15 Dec</span>
+                    <a href="field-notes.html" class="title">The Art of the Accidental Hit</a>
+                    <span class="cat">Craft</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">01 Dec</span>
+                    <a href="field-notes.html" class="title">Listening to Silent Records</a>
+                    <span class="cat">Culture</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">17 Nov</span>
+                    <a href="field-notes.html" class="title">How Sampling Changed the Way We Hear</a>
+                    <span class="cat">Sampling</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">03 Nov</span>
+                    <a href="field-notes.html" class="title">The Producers Who Work in Silence</a>
+                    <span class="cat">Interview</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">20 Oct</span>
+                    <a href="field-notes.html" class="title">Why Fade-Outs Disappeared</a>
+                    <span class="cat">Production</span>
+                </div>
+                <div class="archive-entry" data-hover>
+                    <span class="date">06 Oct</span>
+                    <a href="field-notes.html" class="title">The Bedroom Studio as a Site of Resistance</a>
+                    <span class="cat">Culture</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more-wrap reveal">
+            <p class="count-info">Showing 21 of 128 essays</p>
+            <a href="field-notes.html" class="btn btn-ghost" data-hover>Browse all field notes →</a>
+        </div>
+    </section>
+
+    <section id="letter">
+        <div class="letter reveal">
+            <span class="section-tag" style="justify-content:center;">Twice a month · No noise</span>
+            <h2>Get the full archive in your inbox.</h2>
+            <p>Every new essay, delivered gently every other Sunday.</p>
+            <form class="letter-form" id="subForm">
+                <input type="email" placeholder="you@somewhere.com" required id="subEmail">
+                <button type="submit" class="btn btn-primary magnetic" data-hover-big><span class="fill"></span><span class="txt">Subscribe ↗</span></button>
+            </form>
+            <p class="letter-note hidden" id="subNote">You're on the list. First issue lands Sunday.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-top">
+            <div class="foot-brand">
+                <a href="index.html" class="logo" style="margin-bottom:18px;"><span class="dot"></span> WAVELENGTH</a>
+                <h3>Turn it up<br>and read slowly.</h3>
+            </div>
+            <div class="foot-cols">
+                <div class="foot-col">
+                    <h4>Read</h4>
+                    <a href="field-notes.html" data-hover>Field Notes</a>
+                    <a href="archive.html" data-hover>Archive</a>
+                    <a href="about.html" data-hover>About</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Follow</h4>
+                    <a href="#" data-hover>Instagram</a>
+                    <a href="#" data-hover>Threads</a>
+                    <a href="#" data-hover>RSS</a>
+                </div>
+                <div class="foot-col">
+                    <h4>Say hi</h4>
+                    <a href="contact.html" data-hover>Contact</a>
+                    <a href="contact.html" data-hover>Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>© 2026 Wavelength. Made slowly, on purpose.</span>
+            <a href="index.html" class="back-top" id="backTop" aria-label="Back to top">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
